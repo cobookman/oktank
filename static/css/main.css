@@ -1,0 +1,11 @@
+.shopping-item {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.shopping-item .img {
+  width: 250px;
+  height: 250px;
+  background-size: contain;
+  margin: 15px auto;
+}
