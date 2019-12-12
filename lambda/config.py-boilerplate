@@ -1,0 +1,6 @@
+rds = {
+  "user": "admin",
+  "pass": "",
+  "host": "",
+  "db": "",
+}

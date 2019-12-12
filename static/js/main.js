@@ -34,8 +34,16 @@ class App {
       cost: el.getAttribute('data-cost'),
       datetime: new Date().toJSON().slice(0, 19).replace('T', ' '),
     };
-    console.log(payload);
-    alert("BUY! " + el.getAttribute('data-product'));
+
+    let xhr = new XMLHttpRequest();
+    // xhr.open('POST', 'https://kl8urenjvf.execute-api.us-west-2.amazonaws.com/octank-lambda');
+    xhr.open("POST", "https://re9u6hsb51.execute-api.us-west-2.amazonaws.com/default/octank-lambda");
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    const payloadstr = JSON.stringify(payload);
+    console.log(payloadstr)
+    xhr.send(payloadstr);
+    xhr.onerror = console.log;
+    alert("You bought :" + payload.product);
   }
 }
 
