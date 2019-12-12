@@ -1,3 +1,8 @@
+.github-link {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
 .shopping-item {
   text-align: center;
   margin: 0 auto;
