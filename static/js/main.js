@@ -7,8 +7,8 @@ class App {
   }
 
   bind() {
-    document.querySelector('#start-shopping').addEventListener('click', this.onStartShopping.bind(this));
-    document.querySelector
+    // document.querySelector('#start-shopping').addEventListener('click', this.onStartShopping.bind(this));
+    document.querySelector('#store-select').addEventListener('change', this.onStartShopping.bind(this));
   }
 
   onStartShopping() {
@@ -20,6 +20,8 @@ class App {
 
     this.id = selectEl.options[selectEl.selectedIndex].value;
     document.querySelector('#shopping').classList.remove('hidden');
+    document.querySelector('#sales-dashboard-link').classList.remove('btn-secondary');
+    document.querySelector('#sales-dashboard-link').classList.add('btn-primary');
   }
 }
 
