@@ -15,7 +15,6 @@
   <!-- Favicons -->
   <meta name="theme-color" content="#563d7c">
 
-
   <!-- Custom styles for this template -->
   <link href="css/main.css" rel="stylesheet">
 </head>
@@ -51,27 +50,13 @@
         </p>
       </div>
     </section>
-    <template id="shopping-item-template">
-      <div class="shopping-item col-sm">
-        <div class="shopping-item-title"></div>
-        <img class="shopping-item-img" />
-        <div>
-          <a class="btn btn-primary shopping-item-purchase" href="">
-            Buy
-          </a>
-          <a class="btn btn-secondary shopping-item-info" href="">
-            More Info
-          </a>
-        </div>
-      </div>
-    </template>
 
     <section id="shopping" class="row hidden">
       <div class="shopping-item col-sm">
-        <div class="title">Le Creuset Pong Pie Topper</div>
+        <div class="title">Le Creuset Pong Pie Topper - $100</div>
         <div class="img" style="background-image:url('img/pong.jpg');"></div>
         <div>
-          <a class="btn btn-primary" href="">
+          <a data-product="Pong Pie Topper" data-cost="100" class="btn btn-primary shopping-item-purchase" href="#">
             Buy
           </a>
           <a class="btn btn-secondary"
@@ -82,10 +67,10 @@
       </div>
 
       <div class="shopping-item col-sm">
-        <div class="title">Baby Yoda Mug</div>
+        <div class="title">Baby Yoda Mug - $50</div>
         <div class="img" style="background-image:url('img/baby-yoda.png');"></div>
         <div>
-          <a class="btn btn-primary" href="">
+          <a data-product="Baby Yoda Mug" data-cost="50" class="btn btn-primary shopping-item-purchase" href="#">
             Buy
           </a>
           <a class="btn btn-secondary"
@@ -95,10 +80,11 @@
         </div>
       </div>
       <div class="shopping-item col-sm">
-        <div class="title">Star Trek Communicator</div>
+        <div class="title">Star Trek Communicator - $25</div>
         <div class="img" style="background-image:url('img/star-trek-communicator.jpg');"></div>
         <div>
-          <a class="btn btn-primary" href="">
+          <a data-product="Star Trek Communicator" data-cost="25" class="btn btn-primary shopping-item-purchase"
+            href="#">
             Buy
           </a>
           <a class="btn btn-secondary"
@@ -109,10 +95,10 @@
       </div>
 
       <div class="shopping-item col-sm">
-        <div class="title">Star Trek Uniform - Dead Guys</div>
+        <div class="title">Star Trek Uniform - Dead Guys - $30</div>
         <div class="img" style="background-image:url('img/redshirt.jpg');"></div>
         <div>
-          <a class="btn btn-primary" href="">
+          <a data-product="Star Trek Uniform" data-cost="30" class="btn btn-primary shopping-item-purchase" href="#">
             Buy
           </a>
           <a class="btn btn-secondary"
@@ -131,9 +117,6 @@
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
-  <script src="/docs/4.4/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>
