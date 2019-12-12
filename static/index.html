@@ -36,7 +36,7 @@
         <h1>Sales Analytics Demo</h1>
         <p class="lead text-muted">Please choose a Store Name</p>
         <div class="form-group">
-          <select class="form-control" id="exampleFormControlSelect1">
+          <select class="form-control" id="store-select">
             <option value="">--</option>
             <option value="Sumerian Barbarians">Sumerian Barbarians</option>
             <option value="Hairy Snowmobiles">Hairy Snowmobiles</option>
@@ -47,7 +47,7 @@
           </select>
         </div>
         <p>
-          <a href="#" class="btn btn-primary my-2">Start Shopping</a>
+          <a id="start-shopping" href="#" class="btn btn-primary my-2">Start Shopping</a>
           <a href="#" class="btn btn-secondary my-2">Open Sales Dashboard</a>
         </p>
       </div>
@@ -67,7 +67,7 @@
       </div>
     </template>
 
-    <section id="shopping" class="row">
+    <section id="shopping" class="row hidden">
       <div class="shopping-item col-sm">
         <div class="title">Le Creuset Pong Pie Topper</div>
         <div class="img" style="background-image:url('img/pong.jpg');"></div>
